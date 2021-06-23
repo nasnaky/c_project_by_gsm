@@ -1,0 +1,5 @@
+﻿  tq.c
+C:\Users\1216 정재훈\source\repos\c\c\tq.c(98,7): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+C:\Users\1216 정재훈\source\repos\c\c\tq.c(99,10): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\1216 정재훈\source\repos\c\c\tq.c(101,16): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c.vcxproj -> C:\Users\1216 정재훈\source\repos\c\Debug\c.exe
