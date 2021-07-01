@@ -694,8 +694,6 @@ unsigned _stdcall 영2(void* arg) {
 			}
 		}
 	}
-}
-
 unsigned _stdcall 영(void* arg) {
 	int z[10] = {"GAME OVER"};
 	while (1) {
@@ -754,7 +752,6 @@ unsigned _stdcall s_move1(void* arg) {
 					a[i][j - 1] = 68;
 					a[i][j] = 32;
 				}
-
 			}
 		}
 		
@@ -806,7 +803,6 @@ unsigned _stdcall 영1(void* arg) {//총알
 				else {
 					a[wkd][174] = 64;
 				}
-
 			}
 		}
 		else if (hart != 0) {
@@ -985,15 +981,24 @@ void key_sel(void) {
 	printf("\t\t\t\t\t\t\t\t\t0	 00000000\n");
 	printf("\t\t\t\t\t\t\t\t\t0000000000000000000\n");
 	printf("\t\t\t\t\t\t\t\t\t0	 00000000ㅡ\n\n");
-	printf("\t\t\t\t\t\t여러분은 핼기 입니다. 장애물에 부딪히지 않게 총과 무빙으로 살아 남으세요.\n\n\n");
-	printf("↑: 위로 한칸 올라갑니다.\t\t\t");
-	printf("↓: 위로 한칸 올라갑니다.\t\t\t");
-	printf("스페이스바: 공격을 합니다.\t\t\t");
-	printf("\t\t\t@ : 장애물입니다. \t\t\n\n");
-	printf("> : 공격시 나가는 총알 입니다.\n\n");
-	printf("\t\t\t0 : 헬기를 구성하는 구조입니다. 장애물에 부딪히지 않게 저지하세요\n\n"); 
-	printf("\t\t★해당 게임은 전체화면만 지원합니다. 게임 시작전 전체화면은 해주시길 바랍니다.★\n\n");
-	printf("\t\t\t<전체화면을 하지 않을시 그래픽 문제가 일어날 수 있습니다>\n\n\n");
+	printf("\t\t\t\t\t\t여러분은 핼기 입니다. 장애물에 부딪히지 않게 총과 이동으로 살아 남으세요.\n\n\n\n");
+	printf("\t↑: 위로 한칸 올라갑니다.\t");
+	printf("↓: 위로 한칸 올라갑니다.\t");
+	printf("스페이스바: 공격을 합니다.\t");
+	printf("Z : 총알을 폭발탄으로 변경합니다.\t");
+	printf("X : 총알을 관통탄으로 변경합니다.\n\n");
+	printf("\t\t\t\t\t\t\t\t\tesc : 게임을 강제 종료합니다.\n\n\n");
+	printf("\t@ : 기본 장애물입니다.\t");
+	printf("D : 운석입니다. 기본 공격이 먹히지 않습니다.\t");
+	printf("> : 공격시 나가는 총알 입니다.\t");
+	printf("? : 격파할시 관통탄 5발이 추과됩니다.\t");
+	printf("\\ : 격파할시 폭발탄 5발이 추과됩니다.\n\n\n");
+	printf("\t\t\t* : 폭발탄의 총알 입니다.\t");
+	printf("= : 관통탄의 총알 입니다.\t");
+	printf("0 : 헬기를 구성하는 구조입니다. 장애물에 부딪히지 않게 저지하세요\n"); 
+	Gotxy(30, 50);
+	printf("★해당 게임은 전체화면만 지원합니다. 게임 시작전 전체화면은 해주시길 바랍니다.★");
+	Gotxy(32, 50);
 	printf("아무키나 누른 후 엔터를 누르면 게임이 시작됩니다. : ");
 	scanf("%d", &a);
 }
