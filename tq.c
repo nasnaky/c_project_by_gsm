@@ -50,7 +50,7 @@
 #include<stdio.h>
 #include<Windows.h>
 #include<time.h>
-#include <process.h>
+#include<process.h>
 #include<stdlib.h>
 #include<conio.h>
 
@@ -59,7 +59,7 @@
 #define DOWN 80 
 
 int a[30][175];
-int sum = 501;
+int sum = 5000;
 int bob = 100;
 int rhks = 100;
 int hart = 00;
@@ -683,7 +683,7 @@ unsigned _stdcall 영2(void* arg) {
 		}
 		for (int i = 0; i < 30; i++) {//점수
 			for (int j = 0; j < 175; j++) {
-				if (a[i][j] == 81 && a[i][j-1] == 62|| a[i][j] == 81 && a[i][j - 1] == 61) {
+				if (a[i][j] == 81 && a[i][j - 1] == 62 || a[i][j] == 81 && a[i][j - 1] == 61) {
 					hart--;
 					a[i][j - 1] = 32;
 				}
@@ -694,7 +694,8 @@ unsigned _stdcall 영2(void* arg) {
 			}
 		}
 	}
-unsigned _stdcall 영(void* arg) {
+}
+	unsigned _stdcall 영(void* arg){
 	int z[10] = {"GAME OVER"};
 	while (1) {
 		Gotxy(1, 1);
